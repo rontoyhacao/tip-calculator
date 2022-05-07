@@ -16,10 +16,12 @@ body {
       border-radius: 1.5rem;
       padding: 2rem;
       display: flex;
-      gap: 2rem;
+      // gap: 2rem;
+      box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
       .input-container {
         color: $Dark-grayish-cyan;
         padding: 1rem 0 1rem 0;
+        margin-right: 2rem;
         .tip-radio-wrapper {
           margin: 2rem 0;
           ul {
@@ -74,6 +76,12 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.attribution--mobile {
+  display: none;
+}
+.attribution--desktop {
+  display: block;
+}
 
 @media screen and (max-width: 60em) {
   body {
@@ -86,7 +94,13 @@ body {
         .main-container {
           flex-direction: column;
           box-sizing: border-box;
+          box-shadow: none;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          padding-bottom: 1rem;
           .input-container {
+            margin-right: 0;
+            margin-bottom: 1rem;
             .tip-radio-wrapper {
               ul {
                 grid-template-columns: repeat(2, 1fr);
@@ -111,5 +125,11 @@ body {
         }
       }
     }
+  }
+  .attribution--desktop {
+    display: none;
+  }
+  .attribution--mobile {
+    display: block;
   }
 }

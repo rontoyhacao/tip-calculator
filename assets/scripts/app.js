@@ -22,8 +22,7 @@ const elementResetBtn = document.getElementById(`reset-btn`);
 // selecting elements: number-of-people small validation text element
 const elementValidationText = document.querySelector(`.invalid-input`);
 
-let tipPerPerson;
-let totalPerPerson;
+let tipPerPerson, totalPerPerson;
 
 const hideEmptyInputFieldError = function () {
   elementPeopleInputField.classList.remove(`invalid`);

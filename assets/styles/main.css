@@ -307,11 +307,12 @@ body .wrapper .main-container {
   border-radius: 1.5rem;
   padding: 2rem;
   display: flex;
-  gap: 2rem;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 }
 body .wrapper .main-container .input-container {
   color: hsl(186deg, 14%, 43%);
   padding: 1rem 0 1rem 0;
+  margin-right: 2rem;
 }
 body .wrapper .main-container .input-container .tip-radio-wrapper {
   margin: 2rem 0;
@@ -365,6 +366,14 @@ body .wrapper .main-container .total-container span {
   color: hsl(228deg, 45%, 44%);
 }
 
+.attribution--mobile {
+  display: none;
+}
+
+.attribution--desktop {
+  display: block;
+}
+
 @media screen and (max-width: 60em) {
   body {
     display: initial;
@@ -379,6 +388,14 @@ body .wrapper .main-container .total-container span {
   body .wrapper main .main-container {
     flex-direction: column;
     box-sizing: border-box;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-bottom: 1rem;
+  }
+  body .wrapper main .main-container .input-container {
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
   body .wrapper main .main-container .input-container .tip-radio-wrapper ul {
     grid-template-columns: repeat(2, 1fr);
@@ -397,5 +414,13 @@ body .wrapper .main-container .total-container span {
   }
   body .wrapper main .main-container .total-container table tr td {
     font-size: 2rem;
+  }
+
+  .attribution--desktop {
+    display: none;
+  }
+
+  .attribution--mobile {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -24,12 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](<./screenshots/127.0.0.1_8080_(iPhone%2012%20Pro).png>)
+
+![](<./screenshots/127.0.0.1_8080_%20(1).png>)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/desktopfirst-tip-calculator-using-css-grid-and-flexbox-rySw2eEU5)
+- Live Site URL: [Add live site URL here](https://tip-calculator-rontoyhacao.vercel.app/)
 
 ## My process
 
