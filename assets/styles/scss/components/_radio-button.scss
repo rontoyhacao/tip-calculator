@@ -1,0 +1,37 @@
+.radio-btn {
+  display: none;
+}
+
+.radio-btn:checked + label {
+  background-color: $Strong-cyan;
+  color: $Very-dark-cyan;
+}
+
+.radio-btn:active + label {
+  background-color: $Light-grayish-cyan;
+}
+
+.tip-radio {
+  display: block;
+  background-color: $Very-dark-cyan;
+  color: $White;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $Strong-cyan;
+    color: $Very-dark-cyan;
+  }
+}
+
+.custom-radio {
+  background-color: $Very-light-grayish-cyan;
+  color: inherit;
+  &:hover {
+    background-color: $Very-light-grayish-cyan;
+    color: inherit;
+    outline: 2px solid $Strong-cyan;
+  }
+}

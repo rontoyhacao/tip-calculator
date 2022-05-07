@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $Light-grayish-cyan;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    .main-container {
+      background-color: $White;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      .input-container {
+        color: $Dark-grayish-cyan;
+        padding: 1rem 0 1rem 0;
+        .tip-radio-wrapper {
+          margin: 2rem 0;
+          ul {
+            display: grid;
+            grid-template-columns: repeat(3, 8rem);
+            gap: 1rem;
+          }
+        }
+      }
+      .total-container {
+        background-color: $Very-dark-cyan;
+        border-radius: 1rem;
+        padding: 3rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        table tr {
+          display: grid;
+          grid-template-columns: repeat(2, 10rem);
+          align-items: center;
+          margin-bottom: 2rem;
+          th {
+            text-align: left;
+            color: $White;
+          }
+          td {
+            font-size: 3rem;
+            text-align: right;
+            color: $Strong-cyan;
+            justify-self: end;
+          }
+        }
+        span {
+          display: block;
+          color: $Grayish-cyan;
+        }
+      }
+    }
+  }
+}
+
+.label {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 60em) {
+  body {
+    display: initial;
+    .wrapper {
+      padding-top: 4rem;
+      gap: 2rem;
+      main {
+        width: 100%;
+        .main-container {
+          flex-direction: column;
+          box-sizing: border-box;
+          .input-container {
+            .tip-radio-wrapper {
+              ul {
+                grid-template-columns: repeat(2, 1fr);
+              }
+            }
+          }
+          .total-container {
+            table {
+              width: 100%;
+            }
+            display: initial;
+            flex-direction: column;
+            justify-content: space-between;
+            table tr {
+              grid-template-columns: repeat(2, 1fr);
+              align-items: center;
+              td {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

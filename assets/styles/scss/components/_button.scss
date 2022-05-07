@@ -1,0 +1,16 @@
+button {
+  padding: 0.5rem;
+  background-color: $Strong-cyan;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  color: $Very-dark-cyan;
+  width: 100%;
+  &:hover {
+    background-color: $Light-grayish-cyan;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
+}

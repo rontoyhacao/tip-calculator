@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="/assets/images/logo.svg" alt="Splitter" />
+      </header>
+      <main>
+        <div class="main-container">
+          <div class="input-container">
+            <div class="input-field-wrapper">
+              <label for="bill" class="label">Bill</label>
+              <div class="input bill">
+                <input
+                  class="input-text"
+                  type="number"
+                  name=""
+                  id="bill"
+                  placeholder="0"
+                  min="0"
+                />
+              </div>
+            </div>
+            <div class="tip-radio-wrapper">
+              <fieldset>
+                <legend class="label">Select Tip %</legend>
+                <ul>
+                  <li>
+                    <input
+                      class="radio-btn preset-tip-btn"
+                      type="radio"
+                      name="tip"
+                      id="5"
+                      value="5"
+                    />
+                    <label class="tip-radio" for="5">5%</label>
+                  </li>
+                  <li>
+                    <input
+                      class="radio-btn preset-tip-btn"
+                      type="radio"
+                      name="tip"
+                      id="10"
+                      value="10"
+                    />
+                    <label class="tip-radio" for="10">10%</label>
+                  </li>
+                  <li>
+                    <input
+                      class="radio-btn preset-tip-btn"
+                      type="radio"
+                      name="tip"
+                      id="15"
+                      value="15"
+                    />
+                    <label class="tip-radio" for="15">15%</label>
+                  </li>
+                  <li>
+                    <input
+                      class="radio-btn preset-tip-btn"
+                      type="radio"
+                      name="tip"
+                      id="25"
+                      value="25"
+                    />
+                    <label class="tip-radio" for="25">25%</label>
+                  </li>
+                  <li>
+                    <input
+                      class="radio-btn preset-tip-btn"
+                      type="radio"
+                      name="tip"
+                      id="50"
+                      value="50"
+                    />
+                    <label class="tip-radio" for="50">50%</label>
+                  </li>
+                  <li>
+                    <input
+                      class="input-text custom-input"
+                      type="number"
+                      name="tip"
+                      id="custom-field"
+                      min="0"
+                      placeholder="Custom"
+                    />
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="input-field-wrapper">
+              <label for="number-people" class="label">Number of People</label>
+              <div class="input number-people">
+                <input
+                  class="input-text"
+                  type="number"
+                  name=""
+                  id="number-people"
+                  placeholder="0"
+                  min="1"
+                />
+              </div>
+              <small class="invalid-input hidden">Can't be zero</small>
+            </div>
+          </div>
+          <div class="total-container">
+            <table>
+              <tr>
+                <th>Tip Amount <span>/ person</span></th>
+                <td id="tip-per-person">$0.00</td>
+              </tr>
+              <tr>
+                <th>Total <span>/ person</span></th>
+                <td id="total-per-person">$0.00</td>
+              </tr>
+            </table>
+            <button id="reset-btn">RESET</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/rontoyhacao" target="_blank"
+        >Ron Paolo Toyhacao</a
+      >.
+    </div>
+    <script src="/assets/scripts/app.js"></script>
+  </body>
+</html>
