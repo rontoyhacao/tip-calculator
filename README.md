@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/desktopfirst-tip-calculator-using-css-grid-and-flexbox-rySw2eEU5)
-- Live Site URL: [Add live site URL here](https://tip-calculator-rontoyhacao.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/desktopfirst-tip-calculator-using-css-grid-and-flexbox-rySw2eEU5](https://www.frontendmentor.io/solutions/desktopfirst-tip-calculator-using-css-grid-and-flexbox-rySw2eEU5)
+- Live Site URL: [https://tip-calculator-rontoyhacao.vercel.app/](https://tip-calculator-rontoyhacao.vercel.app/)
 
 ## My process
 
